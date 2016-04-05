@@ -9,11 +9,10 @@
       <block type="movement_stutter" id="47"></block>
     </statement>
     <next>
-      <block type="controls_whileUntil" id="1" inline="false">
-        <field name="MODE">UNTIL</field>
-        <value name="NUMBER">
-          <block type="sensor_button" id="2">
-            <field name="OBJECT">ENTER</field>
+      <block type="controls_repeat" id="79" inline="true">
+        <value name="TIMES">
+          <block type="math_number" id="86">
+            <field name="NUM">1</field>
           </block>
         </value>
         <statement name="DO">
