@@ -7,32 +7,32 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="multimedia_playwav" id="222">
-        <field name="WAV"></field>
+      <block type="led_select" id="290" inline="true">
+        <field name="ACTION">FLASH</field>
+        <value name="LED">
+          <block type="math_number" id="297">
+            <field name="NUM">100</field>
+          </block>
+        </value>
         <next>
-          <block type="multimedia_volume" id="204">
-            <field name="VOLUME">HIGH</field>
+          <block type="movement_setmotors" id="67" inline="true">
+            <value name="BOTHMOVLEFT">
+              <block type="math_number" id="80">
+                <field name="NUM">105</field>
+              </block>
+            </value>
+            <value name="BOTHMOVRIGHT">
+              <block type="math_number" id="81">
+                <field name="NUM">90</field>
+              </block>
+            </value>
             <next>
-              <block type="movement_setmotors" id="67" inline="true">
-                <value name="BOTHMOVLEFT">
-                  <block type="math_number" id="80">
-                    <field name="NUM">105</field>
+              <block type="robot_delay" id="83" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="84">
+                    <field name="NUM">100</field>
                   </block>
                 </value>
-                <value name="BOTHMOVRIGHT">
-                  <block type="math_number" id="81">
-                    <field name="NUM">90</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="robot_delay" id="83" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="84">
-                        <field name="NUM">100</field>
-                      </block>
-                    </value>
-                  </block>
-                </next>
               </block>
             </next>
           </block>
