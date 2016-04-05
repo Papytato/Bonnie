@@ -1,8 +1,9 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="93" inline="true" x="-459" y="-631">
-    <value name="TIMES">
-      <block type="math_number" id="100">
-        <field name="NUM">100</field>
+  <block type="controls_whileUntil" id="107" inline="false" x="-581" y="-681">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="142">
+        <field name="OBJECT">ENTER</field>
       </block>
     </value>
     <statement name="DO">
@@ -62,37 +63,25 @@
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="controls_repeat" id="79" inline="true">
-                                    <value name="TIMES">
-                                      <block type="math_number" id="86">
-                                        <field name="NUM">2</field>
+                                  <block type="movement_setmotors" id="18" inline="true">
+                                    <value name="BOTHMOVLEFT">
+                                      <block type="math_number" id="19">
+                                        <field name="NUM">105</field>
                                       </block>
                                     </value>
-                                    <statement name="DO">
-                                      <block type="movement_setmotors" id="18" inline="true">
-                                        <value name="BOTHMOVLEFT">
-                                          <block type="math_number" id="19">
-                                            <field name="NUM">105</field>
-                                          </block>
-                                        </value>
-                                        <value name="BOTHMOVRIGHT">
-                                          <block type="math_number" id="20">
-                                            <field name="NUM">90</field>
-                                          </block>
-                                        </value>
-                                        <next>
-                                          <block type="robot_delay" id="21" inline="true">
-                                            <value name="DELAY">
-                                              <block type="math_number" id="22">
-                                                <field name="NUM">4300</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </next>
+                                    <value name="BOTHMOVRIGHT">
+                                      <block type="math_number" id="20">
+                                        <field name="NUM">90</field>
                                       </block>
-                                    </statement>
+                                    </value>
                                     <next>
-                                      <block type="movement_stop" id="23"></block>
+                                      <block type="robot_delay" id="21" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="22">
+                                            <field name="NUM">4300</field>
+                                          </block>
+                                        </value>
+                                      </block>
                                     </next>
                                   </block>
                                 </next>
@@ -110,5 +99,8 @@
         </next>
       </block>
     </statement>
+    <next>
+      <block type="movement_stop" id="23"></block>
+    </next>
   </block>
 </xml>
