@@ -33,46 +33,6 @@
                     <field name="NUM">100</field>
                   </block>
                 </value>
-                <next>
-                  <block type="led_select" id="330" inline="true">
-                    <field name="ACTION">FLASH</field>
-                    <value name="LED">
-                      <block type="math_number" id="331">
-                        <field name="NUM">3</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="led_select" id="328" inline="true">
-                        <field name="ACTION">FLASH</field>
-                        <value name="LED">
-                          <block type="math_number" id="329">
-                            <field name="NUM">2</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="led_select" id="332" inline="true">
-                            <field name="ACTION">FLASH</field>
-                            <value name="LED">
-                              <block type="math_number" id="333">
-                                <field name="NUM">4</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="led_select" id="290" inline="true">
-                                <field name="ACTION">FLASH</field>
-                                <value name="LED">
-                                  <block type="math_number" id="311">
-                                    <field name="NUM">5</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </next>
               </block>
             </next>
           </block>
