@@ -10,7 +10,9 @@
       <block type="led_select" id="290" inline="true">
         <field name="ACTION">FLASH</field>
         <value name="LED">
-          <block type="math_random" id="304"></block>
+          <block type="math_number" id="311">
+            <field name="NUM">5</field>
+          </block>
         </value>
         <next>
           <block type="movement_setmotors" id="67" inline="true">
