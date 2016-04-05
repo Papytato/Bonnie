@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="25" inline="false" x="-410" y="-292">
+  <block type="controls_whileUntil" id="25" inline="false" x="-542" y="-571">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_button" id="41">
@@ -7,24 +7,34 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_setmotors" id="67" inline="true">
-        <value name="BOTHMOVLEFT">
-          <block type="math_number" id="80">
-            <field name="NUM">105</field>
-          </block>
-        </value>
-        <value name="BOTHMOVRIGHT">
-          <block type="math_number" id="81">
-            <field name="NUM">90</field>
-          </block>
-        </value>
+      <block type="multimedia_playwav" id="164">
+        <field name="WAV">1</field>
         <next>
-          <block type="robot_delay" id="83" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="84">
-                <field name="NUM">100</field>
+          <block type="multimedia_volume" id="204">
+            <field name="VOLUME">HIGH</field>
+            <next>
+              <block type="movement_setmotors" id="67" inline="true">
+                <value name="BOTHMOVLEFT">
+                  <block type="math_number" id="80">
+                    <field name="NUM">105</field>
+                  </block>
+                </value>
+                <value name="BOTHMOVRIGHT">
+                  <block type="math_number" id="81">
+                    <field name="NUM">90</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="robot_delay" id="83" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="84">
+                        <field name="NUM">100</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
               </block>
-            </value>
+            </next>
           </block>
         </next>
       </block>
