@@ -22,7 +22,7 @@
             </value>
             <next>
               <block type="oled_drawtext" id="7">
-                <field name="TEXT">Hey Disha! Please send me back to Bonnie!</field>
+                <field name="TEXT">Hey Disha! :D</field>
                 <next>
                   <block type="led_select" id="8" inline="true">
                     <field name="ACTION">FLASH</field>
