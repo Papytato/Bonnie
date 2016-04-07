@@ -22,7 +22,7 @@
             </value>
             <next>
               <block type="oled_drawtext" id="7">
-                <field name="TEXT"></field>
+                <field name="TEXT">Hiloz</field>
                 <next>
                   <block type="led_select" id="8" inline="true">
                     <field name="ACTION">FLASH</field>
@@ -33,7 +33,7 @@
                     </value>
                     <next>
                       <block type="led_select" id="10" inline="true">
-                        <field name="ACTION">FLASH</field>
+                        <field name="ACTION">ON</field>
                         <value name="LED">
                           <block type="math_number" id="11">
                             <field name="NUM">2</field>
@@ -49,7 +49,7 @@
                             </value>
                             <next>
                               <block type="led_select" id="14" inline="true">
-                                <field name="ACTION">FLASH</field>
+                                <field name="ACTION">ON</field>
                                 <value name="LED">
                                   <block type="math_number" id="15">
                                     <field name="NUM">4</field>
