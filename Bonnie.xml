@@ -22,7 +22,7 @@
             </value>
             <next>
               <block type="oled_drawtext" id="7">
-                <field name="TEXT">Please face me towards</field>
+                <field name="TEXT">Please turn me towards</field>
                 <next>
                   <block type="oled_setcursor" id="55" inline="true">
                     <value name="STARTX">
