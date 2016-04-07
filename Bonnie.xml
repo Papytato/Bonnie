@@ -22,7 +22,7 @@
             </value>
             <next>
               <block type="oled_drawtext" id="7">
-                <field name="TEXT">Please turn me towards</field>
+                <field name="TEXT">One small step for Jade...</field>
                 <next>
                   <block type="oled_setcursor" id="55" inline="true">
                     <value name="STARTX">
@@ -37,7 +37,7 @@
                     </value>
                     <next>
                       <block type="oled_drawtext" id="58">
-                        <field name="TEXT">Bonnie and Jessica!</field>
+                        <field name="TEXT">One big step for Jadekind!</field>
                         <next>
                           <block type="led_select" id="8" inline="true">
                             <field name="ACTION">FLASH</field>
@@ -48,7 +48,7 @@
                             </value>
                             <next>
                               <block type="led_select" id="10" inline="true">
-                                <field name="ACTION">ON</field>
+                                <field name="ACTION">FLASH</field>
                                 <value name="LED">
                                   <block type="math_number" id="11">
                                     <field name="NUM">2</field>
@@ -64,7 +64,7 @@
                                     </value>
                                     <next>
                                       <block type="led_select" id="14" inline="true">
-                                        <field name="ACTION">ON</field>
+                                        <field name="ACTION">FLASH</field>
                                         <value name="LED">
                                           <block type="math_number" id="15">
                                             <field name="NUM">4</field>
@@ -79,44 +79,24 @@
                                               </block>
                                             </value>
                                             <next>
-                                              <block type="led_select" id="18" inline="true">
-                                                <field name="ACTION">OFF</field>
-                                                <value name="LED">
-                                                  <block type="math_number" id="19">
-                                                    <field name="NUM">2</field>
+                                              <block type="movement_setmotors" id="22" inline="true">
+                                                <value name="BOTHMOVLEFT">
+                                                  <block type="math_number" id="23">
+                                                    <field name="NUM">90</field>
+                                                  </block>
+                                                </value>
+                                                <value name="BOTHMOVRIGHT">
+                                                  <block type="math_number" id="24">
+                                                    <field name="NUM">105</field>
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="led_select" id="20" inline="true">
-                                                    <field name="ACTION">OFF</field>
-                                                    <value name="LED">
-                                                      <block type="math_number" id="21">
-                                                        <field name="NUM">4</field>
+                                                  <block type="robot_delay" id="25" inline="true">
+                                                    <value name="DELAY">
+                                                      <block type="math_number" id="26">
+                                                        <field name="NUM">100</field>
                                                       </block>
                                                     </value>
-                                                    <next>
-                                                      <block type="movement_setmotors" id="22" inline="true">
-                                                        <value name="BOTHMOVLEFT">
-                                                          <block type="math_number" id="23">
-                                                            <field name="NUM">90</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="BOTHMOVRIGHT">
-                                                          <block type="math_number" id="24">
-                                                            <field name="NUM">105</field>
-                                                          </block>
-                                                        </value>
-                                                        <next>
-                                                          <block type="robot_delay" id="25" inline="true">
-                                                            <value name="DELAY">
-                                                              <block type="math_number" id="26">
-                                                                <field name="NUM">100</field>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </next>
-                                                      </block>
-                                                    </next>
                                                   </block>
                                                 </next>
                                               </block>
