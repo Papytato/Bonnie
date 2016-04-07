@@ -144,19 +144,4 @@
       <block type="movement_stop" id="27"></block>
     </next>
   </block>
-  <block type="oled_drawtext" id="62" collapsed="true" x="0" y="0">
-    <field name="TEXT">Jade... One big step </field>
-  </block>
-  <block type="oled_drawtext" id="63" collapsed="true" x="0" y="0">
-    <field name="TEXT">Jade... One big step </field>
-  </block>
-  <block type="oled_drawtext" id="64" collapsed="true" x="0" y="0">
-    <field name="TEXT">Jade... One big step </field>
-  </block>
-  <block type="oled_drawtext" id="65" collapsed="true" x="0" y="0">
-    <field name="TEXT">Jade... One big step </field>
-  </block>
-  <block type="oled_drawtext" id="66" collapsed="true" x="0" y="0">
-    <field name="TEXT">Jade... One big step </field>
-  </block>
 </xml>
